@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Flexbox Patterns</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h3>Advanced Flexbox Patterns</h3>
+
+    <div class="advanced-flex-demo">
+        <h4>Holy Grail Layout with Flexbox</h4>
+        <div class="holy-grail">
+            <header class="hg-header">Header</header>
+            <div class="hg-main">
+                <aside class="hg-sidebar">Left Sidebar</aside>
+                <main class="hg-content">
+                    <h4>Main Content</h4>
+                    <p>This is the classic "Holy Grail" layout achieved with Flexbox. The container area grows while sidebars stay fixed width.</p>
+                </main>
+                <aside class="hg-aside">Right Sidebar</aside>
+            </div>
+            <footer class="hg-footer">Footer</footer>
+        </div>
+    </div>
+
+    <div class="advanced-flex-demo">
+        <h4>Flex Behavior Comparison</h4>
+        <div class="flex-cards">
+            <div class="flex-card card-grow">
+                <strong>flex: 1</strong><br>
+                Grow to fill available space
+            </div>
+            <div class="flex-card card-fixed">
+                <strong>flex: 0 0 200px</strong><br>
+                Fixed 200px width
+            </div>
+            <div class="flex-card card-min">
+                <strong>flex: 1 1 150px</strong><br>
+                Grows min 150px
+            </div>
+        </div>
+    </div>
+
+    <div class="advanced-flex-demo">
+        <h4>Visual Order Control</h4>
+        <div class="order-demo">
+            <div class="order-item order-1">HTML Order: 1<br>Visual Order: 3</div>
+            <div class="order-item order-2">HTML Order: 2<br>Visual Order: 1</div>
+            <div class="order-item order-3">HTML Order: 3<br>Visual Order: 2</div>
+        </div>
+        <p><small>Items are reordered visually using the order property</small></p>
+    </div>
+
+    <div class="advanced-flex-demo">
+        <h4>Individual Item Alignment (align-self)</h4>
+        <div class="align-demo">
+        <div class="align-item">flex-start (default)</div>
+        <div class="align-item align-center">center</div>
+        <div class="align-item align-end">flex-end</div>
+        <div class="align-item align-stretch">Stretch</div>
+    </div>
+</div>
+
+</body>
+</html>

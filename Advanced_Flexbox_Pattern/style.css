@@ -1,0 +1,89 @@
+.advanced-flex-demo {background-color: #f8f9fa;
+                     padding: 20px;
+                     margin: 20px;
+                     border-radius: 8px;
+                     color: black;}
+
+/* Holy Grail Layout with Flexbox */
+.holy-grail {display: flex;
+             flex-direction: column;
+             min-height: 300px;
+             border: 2px solid #dee2e6;
+             overflow: hidden;}
+
+.hg-header, .hg-footer {background-color: #2c3e50;
+                       color: white;
+                       padding: 15px;
+                       text-align: center;}
+
+.hg-main{display: flex;
+         flex: 1;}
+
+.hg-sidebar {background: #34495e;
+             color: white;
+             padding: 20px;
+             flex:0 0 150px;}
+
+.hg-content{background-color: white;
+            padding: 20px;
+            flex: 1;}
+
+.hg-aside{background-color: #7f8c8d;
+         color: white;
+         padding: 20px;
+         flex: 0 0 120px;}
+
+/* Flexible Card with Different Behaviors */
+.flex-cards {display: flex;
+             gap: 15px;
+             margin: 20px 0;
+             flex-wrap: wrap;}
+
+.flex-card {background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            border: 1px solid #e9ecef;}
+
+.card-grow {flex: 1;}
+.card-fixed {flex: 0 0 200px;}
+.card-min {flex: 1 1 150px;}
+.card-no-shrink {flex: 1 0 auto;}
+
+/* Order demonstration */
+.order-demo {display: flex;
+             gap: 10px;
+             margin: 20px 0;}
+
+.order-item {background-color: #007bff;
+             color: white;
+             padding: 15px;
+             text-align: center;
+             border-radius: 4px;
+             flex: 1;}
+
+.order-1{order: 3; background-color: #dc3545;}
+.order-2{order: 1; background-color: #28a745;}
+.order-3{order: 2; background-color: #ffc107; color: black;}
+
+/* Align-Self demonstration */
+.align-demo {display: flex;
+             align-items: flex-start;
+             height: 120px;
+             gap: 10px;
+             background-color: #e9ecef;
+             padding: 15px;
+             border-radius: 5px;}
+
+.align-item{background-color: #6c757d;
+            color: white;
+            padding: 10px;
+            text-align: center;
+            border-radius: 4px;
+            flex: 1;}
+
+
+.align-center { align-self: center; background-color: #17a2b8;}
+.align-end { align-self: flex-end; background-color: #6f42c1;}
+.align-stretch { align-self: stretch; background-color: #fd7e14;}
+
